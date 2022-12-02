@@ -16,7 +16,8 @@ module.exports = {
           100: "#252525"
         },
         "custom-gray" : {
-          100: "#EFEFEF"
+          100: "#EFEFEF",
+          200: "#C4C4C4"
         },
         "custom-red" : {
           100: "#EA3D46"

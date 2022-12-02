@@ -1,57 +1,62 @@
 import React, { useState } from "react";
 import { Image } from "../../../utility/constants";
 import { CLASSES } from "../../../utility/classes";
-import { FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaCodepen, FaBars } from "react-icons/fa";
 
 const BasicLayout = (props) => {
     const { children } = props;
     const [getCollapse, setCollapse] = useState(false);
     return (
         <>
-            <div className="flex flex-col h-screen w-full ">
-                <div className="flex bg-custom-gray-100">
-                    <nav class="container flex justify-between px-4 py-8 mx-auto">
+            <div className="flex flex-col h-screen w-full font-body">
+                <nav className="bg-custom-gray-100">
+                  <div className="max-w-6xl mx-auto px-8">
+                    <div className="flex justify-between py-4">
+                      <div className="flex">
                         <div>
-                            <img src={Image.logo} alt="logo" className="h-7 w-10 inline-block mr-4 -mt-1"/>
+                            <img src={Image.logo} alt="logo" className="h-7 w-10 inline-block -mt-1"/>
                             <h3 className={`${CLASSES.subtext} inline-block`}>ELAICA DELA CRUZ</h3>
                         </div>
-                        <div class={`${getCollapse ? "" : "hidden"} space-x-8 lg:flex`}>
-                            <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>RESUME</a>
-                            <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>WORKS</a>
-                            <div class="flex flex-row space-x-3">
-                                <a href="/" target="_blank">
-                                    <FaLinkedin className="h-7 w-7"/>
-                                </a>
-                                <a href="/" target="_blank">
-                                    <FaGithub className="h-7 w-7"/>
-                                </a>
-                                <a href="/" target="_blank">
-                                    <FaCodepen className="h-7 w-7"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex lg:hidden">
-                            <div onClick={()=> {
-                                setCollapse(!getCollapse)
-                            }}>
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                />
-                                </svg>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+                      </div>
+                      <div className="hidden md:flex items-center space-x-10">
+                          <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>RESUME</a>
+                          <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>WORKS</a>
+                          <div class="flex flex-row space-x-4">
+                              <a href="/" target="_blank">
+                                  <FaLinkedin className="h-7 w-7"/>
+                              </a>
+                              <a href="/" target="_blank">
+                                  <FaGithub className="h-7 w-7"/>
+                              </a>
+                              <a href="/" target="_blank">
+                                  <FaCodepen className="h-7 w-7"/>
+                              </a>
+                          </div>
+                      </div>
+                      <div className="md:hidden flex items-center"
+                        onClick={()=> {
+                          setCollapse(!getCollapse)
+                      }}>
+                          <FaBars className="h-7 w-7"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={`${getCollapse ? "" : "hidden"}`}>
+                    <a href="/" className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>RESUME</a>
+                    <a href="/" className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>WORKS</a>
+                    <div class="flex flex-row space-x-4 mt-4 pb-4 items-center justify-center ">
+                        <a href="/" target="_blank">
+                            <FaLinkedin className="h-7 w-7"/>
+                        </a>
+                        <a href="/" target="_blank">
+                            <FaGithub className="h-7 w-7"/>
+                        </a>
+                        <a href="/" target="_blank">
+                            <FaCodepen className="h-7 w-7"/>
+                        </a>
+                    </div>
+                  </div>
+                </nav>
                 <main className="container flex justify-around py-8 mx-auto">
                     <div className="max-w-7xl mx-auto px-4 mt-20 flex pb-8">
                         <Content children={children} />
