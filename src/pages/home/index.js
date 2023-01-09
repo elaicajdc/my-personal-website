@@ -1,23 +1,10 @@
 import React, { useState  } from "react";
 import { FaLinkedin, FaGithub, FaCodepen } from "react-icons/fa";
 import { AboutModal } from "../../components/common";
-import getImageSize from 'image-size-from-url';
 
-/*
-image1: 'https://i.imgur.com/kVh9pOd.png',
-            image2: 'https://i.imgur.com/Tm25HvW.png', */
 const Home = () => {
 
     const [open, setOpen] = useState(false);
-
-    const getMeta = (url, callback) => {
-        const img = new Image();
-        img.src = url;
-        img.onload = function() { callback(this.width, this.height); }
-    };
-
-    const {widthFirstImage, heightFirstImage} = getImageSize('https://i.imgur.com/kVh9pOd.png');
-    const {widthSecondImage, heightSecondImage} = getImageSize('https://i.imgur.com/Tm25HvW.png');
 
     return (
         <>     
