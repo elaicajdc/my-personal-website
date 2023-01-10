@@ -14,9 +14,9 @@ const BasicLayout = (props) => {
                 </main>
             </div>
             
-            {children.props.main.name == "Home" &&
+            {/* {children.props.main.name == "Home" &&
                 <OwlCarousel />
-            }
+            } */}
         </>
     );
 };
