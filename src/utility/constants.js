@@ -1,9 +1,15 @@
 import logo from "./../assets/my-logo.png";
-import me1 from "./../assets/me-1.png";
-import me2 from "./../assets/me-2.png";
+import test from "./../assets/test.png";
+import circle from "./../assets/gray-blob.png";
+import loading from "./../assets/loading.gif";
+import bes from "./../assets/bes.png";
+import technofest from "./../assets/technofest.png";
 
 export const Image = {
-    logo : logo,
-    me1  : me1,
-    me2  : me2
+    logo    : logo,
+    test    : test,
+    loading : loading,
+    circle  : circle,
+    bes     : bes,
+    technofest : technofest
 };

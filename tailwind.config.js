@@ -11,8 +11,8 @@ module.exports = {
         primary: "0 2px 2px rgba(255,255,255,0.16)"
       },
       backgroundImage: {
-        'firstImage': "url('https://i.imgur.com/kVh9pOd.png')",
-        'secondImage': "url('https://i.imgur.com/Tm25HvW.png')",
+        'firstImage': "url('/public/me1.png')",
+        'secondImage': "url('/public/me2.png')",
       },
       colors: {
         "custom-white" : {
@@ -28,8 +28,8 @@ module.exports = {
           400: "#A1A1A1"
         },
         "custom-red" : {
-          100: "#EA3D46",
-          200: "#BA2D34"
+          100: "#DC3660",
+          200: "#B6294C"
         }
       },
       fontFamily: {

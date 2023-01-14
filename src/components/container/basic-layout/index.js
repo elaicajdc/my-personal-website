@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./navbar";
-import OwlCarousel from "./../owl-carousel";
 const BasicLayout = (props) => {
     const { children } = props;
     return (
@@ -13,10 +12,6 @@ const BasicLayout = (props) => {
                     </div>
                 </main>
             </div>
-            
-            {/* {children.props.main.name == "Home" &&
-                <OwlCarousel />
-            } */}
         </>
     );
 };

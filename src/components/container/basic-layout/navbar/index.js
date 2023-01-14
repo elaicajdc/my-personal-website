@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Image } from "../../../../utility/constants";
 import { CLASSES } from "../../../../utility/classes";
-import { FaLinkedin, FaGithub, FaCodepen, FaBars } from "react-icons/fa";
+import { FaLinkedin, FaBars, FaFacebook, FaEnvelope} from "react-icons/fa";
 
 const Navbar = () => {
     
@@ -37,6 +37,13 @@ function useScrollDirection() {
     const scrollDirection = useScrollDirection();
     const [getCollapse, setCollapse] = useState(false);
     
+    const home = () => {
+        window.scrollTo(0, 0);
+    };
+
+    const works = () => {
+        window.scrollTo(0, document.body.offsetHeight);
+    };
     return (
       <div className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} transition-all duration-500 z-50	`}>
         <nav className="bg-custom-gray-100">
@@ -50,17 +57,17 @@ function useScrollDirection() {
                         </div>
                         </div>
                         <div className="hidden md:flex items-center space-x-10">
-                            <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>RESUME</a>
-                            <a href="/" className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>WORKS</a>
+                            <a href="#home" onClick={home} className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>HOME</a>
+                            <a href="#works" onClick={works} className={`${CLASSES.subtext} ${CLASSES.fadeUnderline}`}>WORKS</a>
                             <div className="flex flex-row space-x-4">
-                                <a href="/" target="_blank">
-                                    <FaLinkedin className="h-7 w-7"/>
+                                <a href="https://ph.linkedin.com/in/elaicadelacruz">
+                                    <FaLinkedin className="h-7 w-7 hover:text-custom-red-200"/>
                                 </a>
-                                <a href="/" target="_blank">
-                                    <FaGithub className="h-7 w-7"/>
+                                <a href="https://www.facebook.com/profile.php?id=100083453246551">
+                                    <FaFacebook className="h-7 w-7 hover:text-custom-red-200"/>
                                 </a>
-                                <a href="/" target="_blank">
-                                    <FaCodepen className="h-7 w-7"/>
+                                <a href="mailto:elaicadelacruz06@gmail.com">
+                                    <FaEnvelope className="h-7 w-7 hover:text-custom-red-200"/>
                                 </a>
                             </div>
                         </div>
@@ -72,18 +79,18 @@ function useScrollDirection() {
                         </div>
                     </div>
                 </div>
-                <div className={`${getCollapse ? "" : "hidden"}`}>
-                    <a href="/" className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>RESUME</a>
-                    <a href="/" className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>WORKS</a>
+                <div className={`${getCollapse ? "block" : "hidden"}`}>
+                    <a href="#home" onClick={home} className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>HOME</a>
+                    <a href="#works" onClick={works} className={`flex justify-center py-2 hover:bg-custom-gray-200 ${CLASSES.subtext}`}>WORKS</a>
                     <div className="flex flex-row space-x-4 mt-4 pb-4 items-center justify-center ">
-                        <a href="/" target="_blank">
-                            <FaLinkedin className="h-7 w-7"/>
+                        <a href="https://ph.linkedin.com/in/elaicadelacruz">
+                            <FaLinkedin className="h-7 w-7 hover:text-custom-red-200"/>
                         </a>
-                        <a href="/" target="_blank">
-                            <FaGithub className="h-7 w-7"/>
+                        <a href="https://www.facebook.com/profile.php?id=100083453246551">
+                            <FaFacebook className="h-7 w-7 hover:text-custom-red-200"/>
                         </a>
-                        <a href="/" target="_blank">
-                            <FaCodepen className="h-7 w-7"/>
+                        <a href="mailto:elaicadelacruz06@gmail.com">
+                            <FaEnvelope className="h-7 w-7 hover:text-custom-red-200"/>
                         </a>
                     </div>
                 </div>

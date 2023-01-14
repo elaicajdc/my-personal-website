@@ -1,9 +1,11 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { XIcon } from "@heroicons/react/solid";
+import { Image } from "../../../../utility/constants";
+
 
 const AboutModal = (props) => {
-    const { icon, open, setOpen } = props;
+    const { open, setOpen } = props;
 
     function closeModal() {
         setOpen(false);
@@ -26,7 +28,7 @@ const AboutModal = (props) => {
                     </Transition.Child>
   
                     <div className="fixed inset-0 overflow-y-auto">
-                        <div className="flex min-h-full items-center justify-center p-4 text-center">
+                        <div className="flex min-h-full items-center justify-center p-8 text-center">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -37,7 +39,7 @@ const AboutModal = (props) => {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-4xl h-modal transform overflow-hidden rounded-md bg-white text-left align-middle shadow-md transition-all">
-                                    <div className="hidden sm:block absolute top-0 right-0 ml-9 mt-6 mr-7">
+                                    <div className="hidden sm:block absolute top-0 right-0 ml-9 mt-6 mr-7 z-50">
                                         <button
                                             type="button"
                                             className="h-7 w-7 flex text-gray-400 bg-custom-gray-100 justify-center items-center text-center"
@@ -51,29 +53,96 @@ const AboutModal = (props) => {
                                         as="h3"
                                         className="ml-9 mt-6 text-base tracking-tighter font-bold text-black"
                                     >
-                                        <div className="flex flex-col">
-                                            <span className="text-3xl font-bold tracking-wider ">01</span>
-                                            <span>ABOUT ME</span>
-                                        </div>
                                     </Dialog.Title>
-                                    <div className="mx-auto pt-16 pb-3 flex items-center justify-center ">
-                                        {icon}
-                                    </div>
-                                    <div className=" mx-20 pb-9">
-                                        <p className="text-sm text-custom-gray-500 flex items-center justify-center text-center">
-                                            <img src="https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000" alt="temporary"/>
-                                        </p>
-                                    </div>
-                                    
-                                    <div className="flex flex-row-reverse border-t border-custom-gray-200">
-                                        <div className="h-10 w-24 mt-3.5 mb-3.5 mr-7">
-                                            <button
-                                                type="button"
-                                                onClick={closeModal}
-                                                className= " hover:text-white hover:bg-custom-yellow-500 cursor-pointer bg-custom-yellow-900 text-sm font-medium text-white cursor-default select-none relative inline-flex h-full w-full justify-center items-center rounded-md border border-transparent"
-                                            >
-											Close
-                                            </button>
+                                    <div className="flex flex-row relative overflow-x-auto">
+                                        
+                                        <div className="text-3xl tracking-wider absolute bottom-36 -left-10 -rotate-90 before:bg-custom-red-100 before:absolute before:top-0 before:left-60 before:w-full before:h-10"><span className="font-bold text-4xl">01</span> ABOUT ME</div>
+                                        <div className="sm:w-full mx-10 py-20 text-sm text-left text-custom-gray-500 relative space-y-5 flex flex-col px-10 ml-24 select-none">
+                                            <img src={Image.circle} className="absolute bottom-10 right-0 w-7/12 opacity-40" alt="circle"/>
+                                            <div className="flex flex-row">
+                                            I’m Elaica Dela Cruz - a web and mobile programmer that aspires to take on roles that will help me utilize my leadership and professional skills. I’m usually reserved but can be a dedicated team player and an involved problem solver when there is an objective to meet!
+                                            </div>
+                                            <div className="text-base font-bold text-black flex flex-row">EDUCATION</div>
+                                            <div className="flex flex-row">
+                                                <div className="flex flex-col">
+                                                    <img src="https://media.licdn.com/dms/image/C510BAQE4uKmSuESsFA/company-logo_100_100/0/1519907147828?e=1681344000&v=beta&t=98i_C_7PeWDatS1A0KGpm47zM_v9jYpPrW5LMSfTvwI" className="mt-2 mr-3" alt="temporary"/>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="text-base font-bold text-black flex flex-row">FEU Institute of Technology</span>
+                                                    <span className="flex flex-row">
+                                                        2018 - 2023<br/>
+                                                        Bachelor of Science in Information Technology with specialization in Web and Mobile Applications<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    <img src="https://media.licdn.com/dms/image/C4E0BAQFgocdTGHthDA/company-logo_100_100/0/1581351014172?e=1681344000&v=beta&t=EcEwca8jFUk99c61miU3icmc26zoVq-KW7okG-732LU" className="mt-2 mr-3" alt="temporary"/>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="text-base font-bold text-black flex flex-row">Cisco Networking Academy</span>
+                                                    <span className="flex flex-row">
+                                                    Aug 2018 - Apr 2022<br/>
+                                                    Computer and Information Systems Security/Information Assurance<br/>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div className="flex flex-row">
+                                                <div className="text-base font-bold text-black flex flex-row">SKILLS</div>
+                                            </div>
+                                            <div className="flex flex-row">
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row">
+                                                        Codeigniter<br/>
+                                                        JQuery<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row font-bold text-black">
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row">
+                                                        MySQL<br/>
+                                                        Postman<br/>
+                                                        BootStrap<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row font-bold text-black">
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row">
+                                                        AJAX<br/>
+                                                        Tailwind<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row font-bold text-black">
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row">
+                                                        Java Springboot<br/>
+                                                        React.js<br/>
+                                                        Vue.js<br/>
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-col pr-4">
+                                                    <span className="flex flex-row font-bold text-black">
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                        SKILLFUL<br/>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </Dialog.Panel>
