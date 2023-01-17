@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FaBehance, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaBehance, FaGithub, FaCodepen, FaArrowUp } from "react-icons/fa";
 import { AboutModal, AchievementsModal, CertificationsModal, ExperienceModal } from "../../components/common";
 import Fullpage, { FullPageSections, FullpageSection } from "@ap.cx/react-fullpage";
 import Slider from "../../components/slider";
 import {Image} from "../../utility/constants";
+import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
 
@@ -25,17 +26,17 @@ const Home = () => {
 
     return (
         <>
-            <div className={`fixed w-full h-full bg-custom-red-100 z-50 left-0 right-0 top-0 bottom-0 flex items-center transition ease-in-out ${loading === true ? `block` : `hidden`} duration-300	`}>
+            <div className={`fixed w-full h-full bg-custom-red-100 z-50 left-0 right-0 top-0 bottom-0 flex items-center transition ease-in-out ${loading === true ? `block` : `hidden`} duration-300 font-body`}>
                 <img src={`${Image.loading}`} className="m-auto w-28" alt="loading"/>
             </div>
             <Fullpage>
-                <FullPageSections className=" m-auto">
+                <FullPageSections className=" m-auto font-body">
                     <FullpageSection className="container m-auto h-screen justify-center align-center flex grow sectionone">
                         <div className="flex flex-col 2xl:flex-row md:flex-row sm:flex-col xs:flex-col h-auto py-24 md:py-36 px-6 md:px-20">
-                            <div className="font-body text-sm">
+                            <div className="text-sm">
                                 <div className={`relative border-0 border-l-8 border-custom-black-100 px-4 before:bg-white before:-ml-2 before:w-50 before:absolute before:w-full before:h-52 before:-left-full before:z-50`}>
                                     <div className={`relative transition duration-700 ease-in-out  ${animation === "" ? `-translate-x-full text-transparent` : `translate-x-0`}`}>
-                                        <div className="text-3xl font-bold">
+                                        <div className="text-3xl font-bold font-header">
                                             Hello, I'm Elaica
                                         </div>
                                         <div className="flex flex-row space-x-4 mt-4 pb-4">
@@ -49,8 +50,8 @@ const Home = () => {
                                                 <FaBehance className="h-7 w-7 hover:text-custom-red-200"/>
                                             </a>
                                         </div>
-                                        <div>
-                                            I'm a full-stack developer that is always eager to boost my skills by consistently giving my best with each program that I create. During my work experiences, I have coded with HTML/CSS.
+                                        <div className="overflow-hidden font-body">
+                                            A web and mobile developer that aspires to take on roles that will help me utilize my leadership and professional skills. I’m usually reserved but I can be a dedicated team player and an involved problem solver when there is an objective to meet.
                                         </div>
                                     </div>
                                     <div className="clear-both"></div>
@@ -143,6 +144,9 @@ const Home = () => {
                 classes={"pt-8"}
                 open={experienceOpen}
                 setOpen={setExperienceOpen}
+            />
+
+            <ScrollToTop smooth className="!bg-black" component={<FaArrowUp className="w-auto text-white text-lg m-auto"/>}
             />
         </>
     );

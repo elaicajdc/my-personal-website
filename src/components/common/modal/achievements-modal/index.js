@@ -91,7 +91,7 @@ const Achievements = (props) => {
                                                         <span className="flex flex-row">
                                                         FEU Institute of Technology<br/>
                                                         2022<br/>
-                                                        Presenter for FunKan- one of the top 3 capstones in IT-WMA
+                                                        Presenter for FunKan which was one of the top 3 capstone projects in IT-WMA
                                                         </span>
                                                     </div>
                                                 </div>

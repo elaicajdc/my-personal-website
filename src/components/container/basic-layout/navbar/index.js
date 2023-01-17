@@ -46,7 +46,7 @@ function useScrollDirection() {
     };
     return (
       <div className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} transition-all duration-500 z-50	`}>
-        <nav className="bg-custom-gray-100">
+        <nav className="bg-custom-gray-100 font-header">
             <div className="container mx-auto ">
                 <div className="max-w-full px-16">
                     <div className="flex justify-between py-4">

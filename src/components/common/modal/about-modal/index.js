@@ -60,7 +60,7 @@ const AboutModal = (props) => {
                                         <div className="sm:w-full mx-10 py-20 text-sm text-left text-custom-gray-500 relative space-y-5 flex flex-col px-10 ml-24 select-none">
                                             <img src={Image.circle} className="absolute bottom-10 right-0 w-7/12 opacity-40" alt="circle"/>
                                             <div className="flex flex-row">
-                                            I’m Elaica Dela Cruz - a web and mobile programmer that aspires to take on roles that will help me utilize my leadership and professional skills. I’m usually reserved but can be a dedicated team player and an involved problem solver when there is an objective to meet!
+                                                I strive to create clean and efficient code and always have great interest in bringing unique concepts to life through our screens. 
                                             </div>
                                             <div className="text-base font-bold text-black flex flex-row">EDUCATION</div>
                                             <div className="flex flex-row">
@@ -130,16 +130,16 @@ const AboutModal = (props) => {
                                                 </div>
                                                 <div className="flex flex-col pr-4">
                                                     <span className="flex flex-row">
-                                                        Java Springboot<br/>
+                                                        JavaSpringboot<br/>
                                                         React.js<br/>
                                                         Vue.js<br/>
                                                     </span>
                                                 </div>
                                                 <div className="flex flex-col pr-4">
                                                     <span className="flex flex-row font-bold text-black">
+                                                        EXPERIENCED<br/>
                                                         SKILLFUL<br/>
-                                                        SKILLFUL<br/>
-                                                        SKILLFUL<br/>
+                                                        EXPERIENCED<br/>
                                                     </span>
                                                 </div>
                                             </div>

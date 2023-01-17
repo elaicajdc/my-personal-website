@@ -3,13 +3,17 @@ import React from "react";
 
 import { Carousel } from "react-scroll-slider";
 
+import Artboard from "./works/artboard";
 import Funkan from "./works/funkan";
-import Restwo from "./works/restwo";
+import Todo from "./works/todo";
+import Miniprojects from "./works/mini";
 
 const Slider = () => (
   <Carousel>
+    <Artboard />
+    <Miniprojects />
+    <Todo />
     <Funkan />
-    <Restwo />
   </Carousel>
 );
 
