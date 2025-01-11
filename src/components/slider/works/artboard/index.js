@@ -24,8 +24,6 @@ const Main = styled.div`
 `;
 
 const Images = styled.div`
-  width: 800px;
-  height: 100%;
   background-image: url(${Image.artboardgif});
   background-size: cover;
   background-position: center;
@@ -40,10 +38,13 @@ const backwardStyleContent = { transform: "translateY(100%)", opacity: 0 };
 const WithImage = () => (
   <Main>
     <Wrapper>
+
+    
       <ActiveItem
         forwardStyle={forwardStyleContent}
         backwardStyle={backwardStyleContent}
       >
+    <Images className="w-20 h-20 md:w-[800px] lg:block xl:block"/>
         <Content title={"ARTBOARD"} description={"ArtBoard is a social media website for artists that was developed using HTML/CSS and JavaScript. Later on, it was given a backend using JavaScript and PHP. For this project, I was the UI/UX designer, and one of the front-end/back-end developers."} link={'https://art-board.netlify.com'}/>
       </ActiveItem>
 
@@ -51,7 +52,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleImage}
         backwardStyle={backwardStyleImage}
       >
-        <Images className="hidden lg:block xl:block"/>
+        <Images className="hidden h-full md:w-[800px] lg:block xl:block"/>
       </ActiveItem>
     </Wrapper>
   </Main>

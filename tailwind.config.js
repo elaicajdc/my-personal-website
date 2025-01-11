@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         'firstImage': "url('/public/me1.png')",
         'secondImage': "url('/public/me2.png')",
+        'firstImageSm': "url('/public/me1-sm.png')",
+        'secondImageSm': "url('/public/me2-sm.png')",
       },
       colors: {
         "custom-white" : {

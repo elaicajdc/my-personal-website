@@ -30,12 +30,16 @@ const Home = () => {
                 <img src={`${Image.loading}`} className="m-auto w-28" alt="loading"/>
             </div>
             <Fullpage>
-                <FullPageSections className=" m-auto font-body">
+                <FullPageSections className="font-body m-auto">
                     <FullpageSection className="container m-auto h-screen justify-center align-center flex grow sectionone">
-                        <div className="flex flex-col 2xl:flex-row md:flex-row sm:flex-col xs:flex-col h-auto py-24 md:py-36 px-6 md:px-20">
-                            <div className="text-sm">
-                                <div className={`relative border-0 border-l-8 border-custom-black-100 px-4 before:bg-white before:-ml-2 before:w-50 before:absolute before:w-full before:h-52 before:-left-full before:z-50`}>
-                                    <div className={`relative transition duration-700 ease-in-out  ${animation === "" ? `-translate-x-full text-transparent` : `translate-x-0`}`}>
+                        
+                        <div className="h-screen mt-20 md:mt-36 flex flex-col 2xl:flex-row md:flex-row sm:flex-col xs:flex-col">
+                        
+                            <div className="text-sm sm:mt-0 mt-auto h-full">
+                                <div className="h-1/6 md:h-auto bg-cover block md:hidden bg-firstImageSm w-screen -mt-1/6  mb-3  object-scale-down bg-center hover:bg-center bg-contain hover:bg-secondImageSm duration-150 ease-out hover:ease-in	">
+                                </div>
+                                <div className={`h-2/6 md:h-auto content-center mx-4 relative border-0 border-l-8 border-custom-black-100 px-4 before:bg-white before:-ml-2 before:w-50 before:absolute before:w-full before:h-52 before:-left-full before:z-50`}>
+                                    <div className={` relative transition duration-700 ease-in-out  ${animation === "" ? `-translate-x-full text-transparent` : `translate-x-0`}`}>
                                         <div className="text-3xl font-bold font-header">
                                             Hello, I'm Elaica
                                         </div>
@@ -48,35 +52,35 @@ const Home = () => {
                                             </a>
                                             <a href="https://www.behance.net/elaicadc">
                                                 <FaBehance className="h-7 w-7 hover:text-custom-red-200"/>
-                                            </a>
+                                            </a>    
                                         </div>
                                         <div className="overflow-hidden font-body">
-                                            A web and mobile developer that aspires to take on roles that will help me utilize my leadership and professional skills. I’m usually reserved but I can be a dedicated team player and an involved problem solver when there is an objective to meet.
+                                            A Full Stack Developer who takes on roles that leverage leadership and management skills, paired with a dedication to building and maintaining polished, professional, and efficient websites.
                                         </div>
                                     </div>
                                     <div className="clear-both"></div>
                                 </div>
-                                <div className="mt-10 m-auto p-4 mb-64">
-                                    <div className="flex flex-row space-x-4">
+                                <div className="h-2/6 md:h-auto mt-2 md:mt-10 m-auto p-4 mb-64 ">
+                                    <div className="flex flex-row space-x-4 h-full">
                                         <div className="flex w-full flex-col space-y-4">
                                             <div
-                                                className="relative lg:h-40 md:h-40 sm:h-24 h-24 rounded-lg bg-custom-red-100 hover:bg-custom-red-200 text-white p-4"
+                                                className="relative lg:h-40 md:h-40 sm:h-24 h-4/6 rounded-lg bg-custom-red-100 hover:bg-custom-red-200 text-white p-4"
                                                 onClick={() => {setAboutOpen(true);}}
                                             >
                                                 <div className="absolute bottom-4 left-4">
                                                     <div className="flex flex-col">
-                                                        <span className="text-3xl font-bold tracking-wider ">01</span>
+                                                        <span className="text-xl md:text-3xl font-bold tracking-wider ">01</span>
                                                         <span className="text-xs md:text-md">ABOUT ME</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div 
-                                                className="relative lg:h-64 md:h-64 sm:h-36 h-36 rounded-lg bg-custom-gray-100 hover:bg-custom-gray-300 text-white p-4"
+                                                className="relative lg:h-64 md:h-64 sm:h-36 h-2/6 rounded-lg bg-custom-gray-100 hover:bg-custom-gray-300 text-white p-4"
                                                 onClick={() => {setExperienceOpen(true);}}
                                             >
                                                 <div className="absolute bottom-4 left-4">
                                                     <div className="flex flex-col">
-                                                        <span className="text-3xl font-bold tracking-wider ">02</span>
+                                                        <span className="text-xl sm:text-3xl font-bold tracking-wider ">02</span>
                                                         <span className="text-xs md:text-md">EXPERIENCE</span>
                                                     </div>
                                                 </div>
@@ -84,23 +88,23 @@ const Home = () => {
                                         </div>
                                         <div className="flex w-full flex-col space-y-4">
                                             <div 
-                                                className="relative lg:h-72 md:h-72 sm:h-40 h-40 rounded-lg bg-custom-gray-300 hover:bg-custom-gray-200 text-white p-4"
+                                                className="relative lg:h-72 md:h-72 sm:h-40 h-2/6 rounded-lg bg-custom-gray-300 hover:bg-custom-gray-200 text-white p-4"
                                                 onClick={() => {setAchievementsOpen(true);}}
                                             >
                                                 <div className="absolute bottom-4 left-4">
                                                     <div className="flex flex-col">
-                                                        <span className="text-3xl font-bold tracking-wider">03</span>
+                                                        <span className="text-xl sm:text-3xl font-bold tracking-wider">03</span>
                                                         <span className="text-xs md:text-md">ACHIEVEMENTS</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div 
-                                                className="relative lg:h-32 md:h-32 sm:h-20 h-20 rounded-lg filter bg-custom-gray-200 hover:bg-custom-gray-400 text-white p-4"
+                                                className="relative lg:h-32 md:h-32 sm:h-20 h-4/6 rounded-lg filter bg-custom-gray-200 hover:bg-custom-gray-400 text-white p-4"
                                                 onClick={() => {setCertificationsOpen(true);}}
                                             >
                                                 <div className="absolute bottom-4 left-4">
                                                     <div className="flex flex-col">
-                                                        <span className="text-3xl font-bold tracking-wider ">04</span>
+                                                        <span className="text-xl sm:text-3xl font-bold tracking-wider ">04</span>
                                                         <span className="text-xs md:text-md">CERTIFICATIONS</span>
                                                     </div>
                                                 </div>
@@ -115,7 +119,6 @@ const Home = () => {
                             </div>
                         </div>
                     </FullpageSection>
-                    
                     <FullpageSection className="h-screen justify-center align-center flex grow sectiontwo">
                         <Slider />
                     </FullpageSection>

@@ -65,81 +65,23 @@ const AboutModal = (props) => {
                                             <div className="text-base font-bold text-black flex flex-row">EDUCATION</div>
                                             <div className="flex flex-row">
                                                 <div className="flex flex-col">
-                                                    <img src="https://media.licdn.com/dms/image/C510BAQE4uKmSuESsFA/company-logo_100_100/0/1519907147828?e=1681344000&v=beta&t=98i_C_7PeWDatS1A0KGpm47zM_v9jYpPrW5LMSfTvwI" className="mt-2 mr-3" alt="temporary"/>
+                                                    <img src={Image.feutech} className="mt-2 mr-3" alt="temporary"/>
                                                 </div>
                                                 <div className="flex flex-col pr-4">
                                                     <span className="text-base font-bold text-black flex flex-row">FEU Institute of Technology</span>
                                                     <span className="flex flex-row">
-                                                        2018 - 2023<br/>
+                                                        2023<br/>
                                                         Bachelor of Science in Information Technology with specialization in Web and Mobile Applications<br/>
                                                     </span>
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <img src="https://media.licdn.com/dms/image/C4E0BAQFgocdTGHthDA/company-logo_100_100/0/1581351014172?e=1681344000&v=beta&t=EcEwca8jFUk99c61miU3icmc26zoVq-KW7okG-732LU" className="mt-2 mr-3" alt="temporary"/>
+                                                    <img src={Image.cisco} className="mt-2 mr-3" alt="temporary"/>
                                                 </div>
                                                 <div className="flex flex-col pr-4">
                                                     <span className="text-base font-bold text-black flex flex-row">Cisco Networking Academy</span>
                                                     <span className="flex flex-row">
-                                                    Aug 2018 - Apr 2022<br/>
+                                                    Apr 2022<br/>
                                                     Computer and Information Systems Security/Information Assurance<br/>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            
-                                            <div className="flex flex-row">
-                                                <div className="text-base font-bold text-black flex flex-row">SKILLS</div>
-                                            </div>
-                                            <div className="flex flex-row">
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row">
-                                                        Codeigniter<br/>
-                                                        JQuery<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row font-bold text-black">
-                                                        SKILLFUL<br/>
-                                                        SKILLFUL<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row">
-                                                        MySQL<br/>
-                                                        Postman<br/>
-                                                        BootStrap<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row font-bold text-black">
-                                                        SKILLFUL<br/>
-                                                        SKILLFUL<br/>
-                                                        SKILLFUL<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row">
-                                                        AJAX<br/>
-                                                        Tailwind<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row font-bold text-black">
-                                                        SKILLFUL<br/>
-                                                        SKILLFUL<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row">
-                                                        JavaSpringboot<br/>
-                                                        React.js<br/>
-                                                        Vue.js<br/>
-                                                    </span>
-                                                </div>
-                                                <div className="flex flex-col pr-4">
-                                                    <span className="flex flex-row font-bold text-black">
-                                                        EXPERIENCED<br/>
-                                                        SKILLFUL<br/>
-                                                        EXPERIENCED<br/>
                                                     </span>
                                                 </div>
                                             </div>

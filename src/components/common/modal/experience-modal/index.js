@@ -60,21 +60,35 @@ const Experience = (props) => {
                                             <img src={Image.circle} className="absolute bottom-0 right-0 w-6/12 opacity-40" alt="circle"/>
                                             <div className="flex flex-col space-y-10">
                                                 <div className="flex flex-row">
+                                                    <div className="flex flex-col mr-5">
+                                                        <img src={Image.samsung} className="mt-2 mr-3 w-72" alt="hooli"/>
+                                                    </div>
                                                     <div className="flex flex-col">
-                                                        <img src="https://media.licdn.com/dms/image/C560BAQEcFCYxCPhOHQ/company-logo_100_100/0/1617701642757?e=1681948800&v=beta&t=t5JpRALjBEEVtHPEjywkxVoi_yWRIwaqrKdXKhdq7Hg" className="mt-2 mr-3 w-72" alt="hooli"/>
+                                                        <span className="text-base font-bold text-black flex flex-row">Samsung Electronics</span>
+                                                        <span className="flex flex-row">
+                                                            Software Engineer<br/>
+                                                            May 2023 - Present<br/>
+                                                            Built and maintained frontend and backend features, including APIs, UI components, and 5G applications for network configuration. Delivered high-quality BDD unit tests, improving code coverage and ensuring a low defect rate. Authored technical documentation (DLD, HLD, user manuals) and ensured on-time requirement delivery.
+                                                            Led Jira workflow implementation, optimized sprint ceremonies, and led the team's project planning as Scrum Master.<br/>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex flex-row">
+                                                    <div className="flex flex-col mr-5">
+                                                        <img src={Image.hooli} className="mt-2 mr-4 w-48" alt="hooli"/>
                                                     </div>
                                                     <div className="flex flex-col">
                                                         <span className="text-base font-bold text-black flex flex-row">Hooli Software</span>
                                                         <span className="flex flex-row">
                                                             Software Engineer Intern<br/>
                                                             Apr 2022 - Oct 2022<br/>
-                                                            As a software engineer intern, I did front-end development using ReactJS and Tailwind and back-end development using Java Springboot. I was tasked with data integration and creation of page layouts, components, user verifications, and APIs<br/>
+                                                            Gained hands-on experience in front-end development using ReactJS and TailwindCSS, as well as back-end development with Java Spring Boot. My responsibilities included data integration in the application and admin pages, creation of page layouts and components, implementation of user verification systems, and development of APIs.<br/>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-row">
-                                                    <div className="flex flex-col">
-                                                        <img src="https://pbs.twimg.com/profile_images/1173471139911221248/mZFiQFW6_400x400.jpg" className="mt-2 mx-4 w-20" alt="hooli"/>
+                                                    <div className="flex flex-col mr-5">
+                                                        <img src={Image.gdsc} className="mt-2 mx-4 w-20" alt="hooli"/>
                                                     </div>
                                                     <div className="flex flex-col pl-2">
                                                         <span className="text-base font-bold text-black flex flex-row">Google Developer Student Clubs</span>

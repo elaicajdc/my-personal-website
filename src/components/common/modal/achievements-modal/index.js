@@ -57,73 +57,48 @@ const Achievements = (props) => {
                                         <div className="text-3xl tracking-wider absolute bottom-44 -left-24 -rotate-90 before:bg-custom-red-100 before:absolute before:top-0 before:left-80 before:w-full before:h-9"><span className="font-bold text-3xl">03</span> ACHIEVEMENTS</div>
                                         <div className="sm:w-full mx-10 pt-20 pb-24 text-sm text-left text-custom-gray-500 relative space-y-5 flex flex-row px-10 ml-24 select-none">
                                             <img src={Image.circle} className="absolute bottom-10 right-0 w-7/12 opacity-40" alt="circle"/>
-                                             <div className="flex flex-col w-full space-y-5">
-                                                <div className="flex flex-row">
+                                            <div className="flex flex-col w-full space-y-5">
+                                             <div className="flex flex-row">
                                                     <div className="flex flex-col w-24">
-                                                        <img src="https://media.licdn.com/dms/image/C510BAQE4uKmSuESsFA/company-logo_100_100/0/1519907147828?e=1681344000&v=beta&t=98i_C_7PeWDatS1A0KGpm47zM_v9jYpPrW5LMSfTvwI" className="mt-2 mr-3 w-16" alt="temporary"/>
+                                                        <img src={Image.samsung} className="mt-2 mr-3 w-16" alt="temporary"/>
                                                     </div>
                                                     <div className="flex flex-col pr-10 w-60">
-                                                        <span className="text-base font-bold text-black flex flex-row">Nominated for Best Capstone Project</span>
+                                                        <span className="text-base font-bold text-black flex flex-row">Samsung Certified Advanced Algorithms Programmer</span>
                                                         <span className="flex flex-row">
-                                                        FEU Institute of Technology<br/>
-                                                        Apr 2022<br/>
+                                                        Samsung Research<br/>
+                                                        2024<br/>
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-row">
                                                     <div className="flex flex-col w-24">
-                                                        <img src="https://media.licdn.com/dms/image/C510BAQE4uKmSuESsFA/company-logo_100_100/0/1519907147828?e=1681344000&v=beta&t=98i_C_7PeWDatS1A0KGpm47zM_v9jYpPrW5LMSfTvwI" className="mt-2 mr-3 w-16" alt="temporary"/>
+                                                        <img src={Image.feutech} className="mt-2 mr-3 w-16" alt="temporary"/>
                                                     </div>
-                                                    <div className="flex flex-col w-60">
-                                                        <span className="text-base font-bold text-black flex flex-row">Top Performing Student 2018-2022</span>
+                                                    <div className="flex flex-col pr-10 w-60">
+                                                        <span className="text-base font-bold text-black flex flex-row">Magna Cum Laude</span>
                                                         <span className="flex flex-row">
                                                         FEU Institute of Technology<br/>
-                                                        2018-2022
+                                                        2023<br/>
                                                         </span>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div className="flex flex-col w-full space-y-5">
                                                 <div className="flex flex-row">
                                                     <div className="flex flex-col w-24">
                                                         <img src={Image.technofest} className="mt-2 mr-3 w-16" alt="temporary"/>
                                                     </div>
                                                     <div className="flex flex-col pr-10 w-60">
-                                                    <span className="text-base font-bold text-black flex flex-row">Technofest Participant</span>
+                                                    <span className="text-base font-bold text-black flex flex-row">Technofest Presentor</span>
                                                         <span className="flex flex-row">
                                                         FEU Institute of Technology<br/>
                                                         2022<br/>
-                                                        Presenter for FunKan which was one of the top 3 capstone projects in IT-WMA
+                                                        Representative of my university for the global research presentation event
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
                                             
-                                            <div className="flex flex-col w-full space-y-5">
-                                            <div className="flex flex-row">
-                                                <div className="flex flex-col w-24">
-                                                    <img src={Image.bes} className="mt-2 mr-3 w-16" alt="temporary"/>
-                                                </div>
-                                                <div className="flex flex-col w-60">
-                                                    <span className="text-base font-bold text-black flex flex-row">Academic Excellence Awardee</span>
-                                                    <span className="flex flex-row">
-                                                    Bulacan Ecumenical School<br/>
-                                                    Mar 2018<br/>
-                                                    With Honors
-                                                    </span>
-                                                </div>
-                                                </div>
-                                                <div className="flex flex-row">
-                                                    <div className="flex flex-col w-24">
-                                                        <img src="https://media.licdn.com/dms/image/C510BAQE4uKmSuESsFA/company-logo_100_100/0/1519907147828?e=1681344000&v=beta&t=98i_C_7PeWDatS1A0KGpm47zM_v9jYpPrW5LMSfTvwI" className="mt-2 mr-3 w-16" alt="temporary"/>
-                                                    </div>
-                                                    <div className="flex flex-col pr-10 w-60">
-                                                        <span className="text-base font-bold text-black flex flex-row">Academic Scholarship</span>
-                                                        <span className="flex flex-row">
-                                                        FEU Institute of Technology<br/>
-                                                        2018-2021
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </Dialog.Panel>
