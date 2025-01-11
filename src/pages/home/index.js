@@ -36,7 +36,7 @@ const Home = () => {
                         <div className="h-screen mt-20 md:mt-36 flex flex-col 2xl:flex-row md:flex-row sm:flex-col xs:flex-col">
                         
                             <div className="text-sm sm:mt-0 mt-auto h-full">
-                                <div className="h-1/6 md:h-auto bg-cover block md:hidden bg-firstImageSm w-screen -mt-1/6  mb-3  object-scale-down bg-center hover:bg-center bg-contain hover:bg-secondImageSm duration-150 ease-out hover:ease-in	">
+                                <div className="h-1/6 md:h-auto bg-cover bg-norepeat block md:hidden bg-firstImageSm w-screen -mt-1/6  mb-3  object-scale-down bg-center hover:bg-center hover:bg-secondImageSm duration-150 ease-out hover:ease-in	">
                                 </div>
                                 <div className={`h-2/6 md:h-auto content-center mx-4 relative border-0 border-l-8 border-custom-black-100 px-4 before:bg-white before:-ml-2 before:w-50 before:absolute before:w-full before:h-52 before:-left-full before:z-50`}>
                                     <div className={` relative transition duration-700 ease-in-out  ${animation === "" ? `-translate-x-full text-transparent` : `translate-x-0`}`}>

@@ -38,13 +38,11 @@ const backwardStyleContent = { transform: "translateY(100%)", opacity: 0 };
 const WithImage = () => (
   <Main>
     <Wrapper>
-
-    
       <ActiveItem
         forwardStyle={forwardStyleContent}
         backwardStyle={backwardStyleContent}
       >
-    <Images className="w-20 h-20 md:w-[800px] lg:block xl:block"/>
+        <Images className="mt-1/6 w-screen bg-cover bg-norepeat h-2/6 md:w-[800px] lg:hidden xl:hidden"/>
         <Content title={"ARTBOARD"} description={"ArtBoard is a social media website for artists that was developed using HTML/CSS and JavaScript. Later on, it was given a backend using JavaScript and PHP. For this project, I was the UI/UX designer, and one of the front-end/back-end developers."} link={'https://art-board.netlify.com'}/>
       </ActiveItem>
 

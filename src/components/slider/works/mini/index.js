@@ -25,8 +25,6 @@ const Main = styled.div`
 
 
 const Images = styled.div`
-  width: 800px;
-  height: 100%;
   background-image: url(${Image.miniproj});
   background-size: cover;
   background-position: center;
@@ -45,6 +43,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleContent}
         backwardStyle={backwardStyleContent}
       >
+        <Images className="mt-1/6 w-screen bg-cover bg-norepeat h-2/6 md:w-[800px] lg:hidden xl:hidden"/>
         <Content title={"MINI PROJECTS"} description={"Check out my mini projects in my github profile. Some that I've accomplished is a lucky 9 game and a rock paper and scissors game using JS"} link={'https://github.com/elaicajdc'}/>
       </ActiveItem>
 
@@ -52,7 +51,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleImage}
         backwardStyle={backwardStyleImage}
       >
-        <Images className="hidden lg:block xl:block"/>
+        <Images className="hidden h-full md:w-[800px] lg:block xl:block"/>
       </ActiveItem>
     </Wrapper>
   </Main>

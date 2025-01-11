@@ -24,8 +24,6 @@ const Main = styled.div`
 `;
 
 const Images = styled.div`
-  width: 940px;
-  height: 100%;
   background-image: url(${Image.todolist});
   background-size: cover;
   background-position: center;
@@ -46,6 +44,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleContent}
         backwardStyle={backwardStyleContent}
       >
+        <Images className="mt-1/6 w-full bg-norepeat bg-cover h-2/6 md:w-[800px] lg:hidden xl:hidden"/>
         <Content title={"TO DO LIST"} description={"This mini todo list project with CRUD operations was made using ReactJS, Tailwind, and Hooks."} link={'https://github.com/elaicajdc/React-Tailwind-TODO'}/>
       </ActiveItem>
 
@@ -53,7 +52,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleImage}
         backwardStyle={backwardStyleImage}
       >
-        <Images className="hidden lg:block xl:block"/>
+        <Images className="hidden h-full md:w-[940px] lg:block xl:block"/>
       </ActiveItem>
     </Wrapper>
   </Main>

@@ -18,15 +18,14 @@ const ContentTitle = styled.p`
 
 const ContentContainer = styled.div`
   width: 70%;
-  margin: 0 auto;
 `;
 
 const content = ({ title, description, width, style, link }) => {
   return (
     <ContentWrapper width={width} style={style}>
-      <ContentContainer className="relative">
+      <ContentContainer className="relative mt-0 mx-auto lg:mt-36">
         <ContentTitle className="font-header before:absolute before:w-4 before:h-4 before:bg-black before:-left-8 before:top-7">{title}</ContentTitle>
-        <p className="max-w-[40vw] break-word">{description}</p>
+        <p className="max-w-[50vw] break-word">{description}</p>
         <a href={`${link}`}>
           <button type="button" class="mt-5 inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-black hover:bg-gray-600 transition ease-in-out duration-150" disabled="">
             {`View Project`}

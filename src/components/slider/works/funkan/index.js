@@ -25,8 +25,6 @@ const Main = styled.div`
 
 
 const Images = styled.div`
-  width: 800px;
-  height: 100%;
   background-image: url(${Image.funkangif});
   background-size: cover;
   background-position: center;
@@ -45,6 +43,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleContent}
         backwardStyle={backwardStyleContent}
       >
+        <Images className="w-screen bg-cover bg-norepeat h-2/6 md:w-[800px] lg:hidden xl:hidden"/>
         <Content title={"FUNKAN"} description={"FunKan is a travel package reservation system that was made for an Indonesian travel agency. For this thesis project, I am assigned as the Project Manager, UI/UX designer, and one of the front-end/back-end developers."} link={'https://funkan.net'}/>
       </ActiveItem>
 
@@ -52,7 +51,7 @@ const WithImage = () => (
         forwardStyle={forwardStyleImage}
         backwardStyle={backwardStyleImage}
       >
-        <Images className="hidden lg:block xl:block"/>
+        <Images className="hidden h-full md:w-[800px] lg:block xl:block"/>
       </ActiveItem>
     </Wrapper>
   </Main>
